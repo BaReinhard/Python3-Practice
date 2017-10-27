@@ -22,3 +22,15 @@ class Mathematics(object):
         for i in range(1, num + 1):
             total *= i
         return total
+
+    def fibonacci(self, num):
+        """Returns Fibonacci Sequence up to x numbers"""
+        seq = []
+        prev = 0
+        current = 1
+        for item in range(1, num + 1):
+            fibnum = prev + current
+            seq.append(fibnum)
+            prev = current
+            current = fibnum
+        return seq
