@@ -16,19 +16,21 @@ class Mathematics(object):
         else:
             return num * self.factorial(num - 1)
 
-    def factorial_iterative(self, num):
+    @staticmethod
+    def factorial_iterative(num):
         """Returns Factorial of number given iteratively"""
         total = 1
         for i in range(1, num + 1):
             total *= i
         return total
 
-    def fibonacci(self, num):
+    @staticmethod
+    def fibonacci(num):
         """Returns Fibonacci Sequence up to x numbers"""
         seq = []
         prev = 0
         current = 1
-        for item in range(1, num + 1):
+        while(len(seq) != num):
             fibnum = prev + current
             seq.append(fibnum)
             prev = current
