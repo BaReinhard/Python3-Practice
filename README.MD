@@ -1,0 +1,3 @@
+# Python For the new Math API
+
+Because Python treats functions as first class citizens, Python lends itself to the structure desired for the Math API. Not only can we print the functions signature as a string, we can also allow for self documentation via docstrings to easily get information and params simply by writing the functions correctly with a standardized docstring. Among the details above Python also lends itself better to Mathematical functions due to the length of integers that can be returned, in addition Python has an extensive standard library to help in getting the accuracy desired for some more complex computations.
