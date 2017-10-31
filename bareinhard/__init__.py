@@ -1,1 +1,1 @@
-from bareinhard.functions.mathematics import Mathematics
+from bareinhard import mathematics
